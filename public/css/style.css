@@ -1,0 +1,188 @@
+/* Custom JMC Color Palette */
+:root {
+    --jmc-dark-blue: #23225f;
+    --jmc-orange: #f77d02;
+    --jmc-text: #333;
+}
+
+body {
+    padding-top: 70px;
+    /* Offset for fixed navbar */
+    font-family: 'Poppins', sans-serif;
+    /* JMC uses Poppins font */
+    color: var(--jmc-text);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* JMC Orange Button */
+.btn-jmc-orange {
+    background-color: var(--jmc-orange);
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-jmc-orange:hover {
+    background-color: #e06f00;
+    color: #fff;
+}
+
+/* Navbar text color */
+.navbar-nav .nav-link {
+    color: var(--jmc-dark-blue);
+}
+
+/* Hero Section Style */
+#hero {
+    height: 80vh;
+    background: url('https://jmc.co.id/assets/img/hero-img.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--jmc-dark-blue);
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    color: var(--jmc-dark-blue);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Service Card Styling */
+.service-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.service-card .icon {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    /* Requires Font Awesome */
+    color: var(--jmc-orange);
+}
+
+
+/* Custom Dropdown Styling for JMC Navbar */
+.jmc-dropdown {
+    width: 450px;
+    /* Adjust width as needed */
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.jmc-dropdown .container {
+    padding: 0;
+}
+
+.dropdown-item-grid {
+    display: block;
+    padding: 8px 10px;
+    color: var(--jmc-text);
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-item-grid:hover {
+    background-color: #f8f9fa;
+    color: var(--jmc-orange);
+}
+
+.dropdown-item-grid i {
+    color: var(--jmc-orange);
+}
+
+/* Styling Halaman Kontak */
+.contact-section {
+    background-color: #f8f9fa;
+    /* Warna latar belakang abu-abu muda */
+}
+
+.contact-info {
+    background-color: var(--jmc-dark-blue);
+    /* Menggunakan warna biru JMC */
+}
+
+.form-control:focus {
+    border-color: var(--jmc-orange);
+    box-shadow: 0 0 0 0.25rem rgba(247, 125, 2, 0.25);
+}
+
+
+/* Styling untuk Dropdown Kustom Sesuai Gambar */
+.navbar-dropdown-custom {
+    width: 450px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    /* Memberi sedikit jarak dari navbar */
+}
+
+/* Teks dan ikon di dalam grid dropdown */
+.dropdown-item-grid {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-item-grid:hover {
+    background-color: #f8f9fa;
+    color: #f77d02;
+    /* Warna oranye saat di-hover */
+}
+
+.dropdown-item-grid i {
+    color: #f77d02;
+    /* Warna oranye untuk ikon */
+}
+
+/* Warna oranye untuk teks "Selengkapnya" */
+.jmc-orange-text {
+    color: #f77d02;
+}
+
+/* Garis bawah oranye untuk menu yang aktif */
+.jmc-active {
+    position: relative;
+    color: #f77d02 !important;
+    /* Warna oranye untuk teks aktif */
+}
+
+.jmc-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    height: 4px;
+    background-color: #f77d02;
+    border-radius: 2px;
+}

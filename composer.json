@@ -1,0 +1,12 @@
+{
+    "name": "juanb/jmc-clone",
+    "authors": [
+        {
+            "name": "juanbenedhit",
+            "email": "87563952+juanbenedhit@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "league/plates": "^3.6"
+    }
+}
