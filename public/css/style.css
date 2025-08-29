@@ -1,4 +1,3 @@
-/* Custom JMC Color Palette */
 :root {
     --jmc-dark-blue: #23225f;
     --jmc-orange: #f77d02;
@@ -7,9 +6,7 @@
 
 body {
     padding-top: 70px;
-    /* Offset for fixed navbar */
     font-family: 'Poppins', sans-serif;
-    /* JMC uses Poppins font */
     color: var(--jmc-text);
 
     display: flex;
@@ -23,10 +20,8 @@ main {
 
 .navbar-logo {
     height: 40px;
-    /* Anda bisa sesuaikan ukurannya di sini */
 }
 
-/* JMC Orange Button  */
 .btn-jmc-orange {
     background-color: var(--jmc-orange);
     color: #fff;
@@ -42,7 +37,6 @@ main {
 }
 
 
-/* General Section Styling */
 section {
     padding: 60px 0;
 }
@@ -53,25 +47,15 @@ section {
     margin-bottom: 40px;
 }
 
-/* Service Card Styling */
-.service-card {
-    border: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-}
 
 
 /* Styling Halaman Kontak */
 .contact-section {
     background-color: #f8f9fa;
-    /* Warna latar belakang abu-abu muda */
 }
 
 .contact-info {
     background-color: var(--jmc-dark-blue);
-    /* Menggunakan warna biru JMC */
 }
 
 .form-control:focus {
@@ -91,16 +75,21 @@ section {
     font-weight: 700;
 }
 
-/* Gaya Judul Seksi */
 .section-title {
     font-weight: 700;
     color: var(--jmc-dark-blue);
 }
 
-/* Kartu Layanan dengan Ikon */
 .service-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
+
 
 .service-card:hover {
     transform: translateY(-10px);
@@ -118,13 +107,112 @@ section {
     justify-content: center;
 }
 
-/* Kartu Portofolio */
 .portfolio-card {
     overflow: hidden;
-    /* Agar gambar tidak keluar dari border-radius */
     transition: transform 0.3s ease;
 }
 
 .portfolio-card:hover {
     transform: scale(1.05);
+}
+
+#page-hero {
+    height: 40vh;
+    background: url('../images/hero/hero.png') no-repeat center center;
+    background-size: cover;
+}
+
+.sidebar-widget {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+.sidebar-link {
+    display: block;
+    text-decoration: none;
+    color: var(--jmc-text);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-link:hover {
+    background-color: #e2e6ea;
+    color: var(--jmc-dark-blue);
+}
+
+.sidebar-link.active {
+    background-color: var(--jmc-orange);
+    color: white;
+}
+
+#cta {
+    background-color: var(--jmc-dark-blue);
+}
+
+.blog-post-card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    transition: transform 0.3s ease;
+}
+
+.blog-post-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--jmc-orange);
+    border-color: var(--jmc-orange);
+}
+
+.pagination .page-link {
+    color: var(--jmc-dark-blue);
+}
+
+.main-footer {
+    background-color: var(--jmc-dark-blue);
+    color: #fff;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--jmc-orange);
+}
+
+.main-footer ul li {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--jmc-orange);
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
 }
