@@ -65,7 +65,7 @@ section {
 
 
 #hero {
-    height: 70vh;
+    height: 95vh;
     background: url('../images/hero/hero.png') no-repeat center center;
     background-size: cover;
 }
@@ -215,4 +215,12 @@ section {
 
 .footer-bottom {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.testimonial-card {
+    background-color: #fff;
+    border-left: 5px solid var(--jmc-orange);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 0 8px 8px 0;
 }
