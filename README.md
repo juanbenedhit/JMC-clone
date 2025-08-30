@@ -6,7 +6,7 @@ Proyek ini dibuat untuk memenuhi **Tes Teknis Web Developer (Internship)** denga
 
 - **Backend**: PHP Murni (Tanpa Framework)
 - **Frontend**: Bootstrap (CSS) & jQuery (JavaScript)
-- **Database**: MySQL / MariaDB (PDO)
+- **Database**: MySQL(PDO)
 - **Template Engine**: Plates
 
 ## Panduan Instalasi
